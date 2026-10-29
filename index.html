@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olivier Leonad Akono Mve – Développeur web et sécurité informatique</title>
+  <meta name="description" content="Portfolio d'Olivier Leonad Akono Mve, développeur web et étudiant en sécurité informatique à Yaoundé.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="side">
+  <div class="photo">
+    <img src="photo.jpg" alt="Portrait d'Olivier Leonad Akono Mve" onerror="this.remove()">
+    <span aria-hidden="true">OL</span>
+  </div>
+  <h1>Akono Mve<br>Olivier Leonad</h1>
+  <p class="role">Développeur web<br>Étudiant en sécurité informatique</p>
+
+  <button type="button" id="theme" class="theme" aria-label="Changer de thème">Thème sombre</button>
+
+  <nav aria-label="Navigation principale">
+    <a href="#projets">Projets</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#competences">Compétences</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <p class="place">Yaoundé, Cameroun<br>Français, anglais</p>
+</aside>
+
+<main>
+  <section class="intro">
+    <h2>Je construis des sites, des API et des outils qui protègent les données de ceux qui les utilisent.</h2>
+    <p>Développeur web depuis janvier 2022, je passe de la maquette Figma à l'API REST, et j'étudie aujourd'hui la sécurité informatique en licence. Avant le code, il y a eu l'électronique et le graphisme : j'aime les choses qui marchent et qui se voient bien.</p>
+    <a class="btn" href="#contact">Me contacter</a>
+  </section>
+
+  <section id="projets">
+    <h2>Dix projets en préparation</h2>
+    <p class="lead">Chaque fiche sera mise à jour avec un lien vers la démo et vers le code au fur et à mesure de la réalisation.</p>
+
+    <div class="filters" role="group" aria-label="Filtrer les projets">
+      <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Tous</button>
+      <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+      <button type="button" class="filter" data-filter="backend" aria-pressed="false">Serveur et API</button>
+      <button type="button" class="filter" data-filter="securite" aria-pressed="false">Sécurité</button>
+    </div>
+    <p id="count" class="small" aria-live="polite"></p>
+
+    <ul class="projects">
+      <li class="project" data-cat="web securite">
+        <div class="head"><h3>Vérificateur de force de mot de passe</h3><span class="badge">À venir</span></div>
+        <p>Une page qui note un mot de passe en direct et explique quoi corriger, sans jamais l'envoyer sur un serveur.</p>
+        <p class="stack">HTML, CSS, JavaScript</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="securite">
+        <div class="head"><h3>Analyseur d'en-têtes de sécurité HTTP</h3><span class="badge">À venir</span></div>
+        <p>Vous saisissez l'adresse de votre propre site, l'outil vérifie les en-têtes de sécurité présents et propose des corrections.</p>
+        <p class="stack">Python, Flask</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="securite">
+        <div class="head"><h3>Messagerie chiffrée de bout en bout</h3><span class="badge">À venir</span></div>
+        <p>Chiffrement et déchiffrement de messages dans le navigateur avec une clé partagée, pour comprendre comment fonctionne AES.</p>
+        <p class="stack">JavaScript, Web Crypto API</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="backend">
+        <div class="head"><h3>API REST de gestion de tâches</h3><span class="badge">À venir</span></div>
+        <p>Une API documentée avec inscription, connexion par jeton et création de tâches, testée avec des requêtes automatisées.</p>
+        <p class="stack">Node.js, Express, SQLite</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="backend">
+        <div class="head"><h3>Boutique de composants électroniques</h3><span class="badge">À venir</span></div>
+        <p>Catalogue, panier et commande pour une boutique de pièces électroniques, avec une base de données MySQL.</p>
+        <p class="stack">PHP, MySQL, CSS</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="web">
+        <div class="head"><h3>Assistant de diagnostic de pannes</h3><span class="badge">À venir</span></div>
+        <p>Un arbre de questions qui guide l'utilisateur d'un symptôme à une cause probable, tiré de mon expérience en maintenance électronique.</p>
+        <p class="stack">HTML, CSS, JavaScript</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="web">
+        <div class="head"><h3>Site vitrine pour une PME de Yaoundé</h3><span class="badge">À venir</span></div>
+        <p>Maquette Figma puis intégration fidèle, rapide et adaptée aux téléphones, avec un formulaire de contact.</p>
+        <p class="stack">Figma, HTML, CSS</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="web">
+        <div class="head"><h3>Tableau de bord de budget personnel</h3><span class="badge">À venir</span></div>
+        <p>Saisie des revenus et des dépenses, totaux par catégorie et graphique mensuel, données gardées dans le navigateur.</p>
+        <p class="stack">JavaScript, Chart.js</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="web">
+        <div class="head"><h3>Créateur de logos et de chartes graphiques</h3><span class="badge">À venir</span></div>
+        <p>Choix de couleurs, de polices et de formes, avec aperçu sur une carte de visite et export en image.</p>
+        <p class="stack">HTML, CSS, JavaScript, Canvas</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+
+      <li class="project" data-cat="backend securite">
+        <div class="head"><h3>Blog avec connexion sécurisée</h3><span class="badge">À venir</span></div>
+        <p>Articles, espace d'administration, mots de passe hachés, protection contre les injections SQL et les failles XSS.</p>
+        <p class="stack">PHP, MySQL, sessions</p>
+        <p class="links"><a href="#" aria-disabled="true">Démo</a> <a href="#" aria-disabled="true">Code</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="parcours">
+    <h2>Parcours</h2>
+    <div class="cols">
+      <div>
+        <h3>Études</h3>
+        <ol class="timeline">
+          <li><span>2025 – 2026</span> Licence en sécurité informatique</li>
+          <li><span>2023 – 2024</span> Bac+2, informatique fondamentale</li>
+          <li><span>2022 – 2023</span> Bac+1, informatique fondamentale</li>
+          <li><span>2020 – 2021</span> Baccalauréat série C</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Expérience</h3>
+        <ol class="timeline">
+          <li><span>Depuis janvier 2022</span> Développement web : intégration à partir de maquettes Figma et Adobe, API REST, bases de données</li>
+          <li><span>Sept. 2020 – janv. 2023</span> Montage et graphisme : affiches, flyers, logos, chartes graphiques, maquettes web</li>
+          <li><span>Sept. 2018 – janv. 2022</span> Maintenance électronique : diagnostics, prévention des pannes, conseil technique</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences</h2>
+    <ul class="tags">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>Node.js</li><li>Python</li>
+      <li>API REST</li><li>Bases de données</li><li>Figma</li><li>Adobe</li>
+      <li>Sécurité informatique</li><li>Gestion de projet</li><li>Gestion du temps</li><li>Leadership</li>
+    </ul>
+    <p class="small">Centres d'intérêt : lecture, randonnée, gymnastique, musique, football.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Un projet, une mission, une question : écrivez-moi, je réponds en français ou en anglais.</p>
+    <p class="actions">
+      <a class="btn" href="mailto:amoldkalash@gmail.com">Écrire un e-mail</a>
+      <button type="button" id="copy" class="btn ghost">Copier l'adresse</button>
+      <span id="copied" class="small" role="status"></span>
+    </p>
+  </section>
+
+  <footer>© 2026 Olivier Leonad Akono Mve</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
